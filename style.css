@@ -1,0 +1,131 @@
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: 25px;
+    word-spacing: 2px;
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+
+--Transparent-white: hsla(0, 0%, 100%, 0.75);
+--Very-light-gray: hsl(0, 0%, 95%);
+}
+
+body{
+
+    max-width: 1440px;
+    height: 800px;
+    background-color: var(--Very-light-gray);
+    position: relative;
+
+}
+
+p{
+    margin: 50px 0px;
+    color: var(--Transparent-white);
+}
+
+.wrapper
+{
+    margin: 100px auto;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 15px;
+    align-content: center;
+}
+
+.card{
+    padding: 50px 50px;
+    width: 300px;
+    height: 500px;
+}
+
+.sedan{
+    background-color: var(--Bright-orange);
+}
+.sedan button{
+    color: var(--Bright-orange);
+}
+
+.SUV{
+    background-color: var(--Dark-cyan);
+}
+.SUV button{
+    color: var(--Dark-cyan);
+}
+
+.luxury{
+    background-color: var(--Very-dark-cyan);
+}
+.luxury button{
+    color: var(--Very-dark-cyan);
+}
+
+
+
+.title{
+    /* font-feature-settings: "abvs"; */
+    margin: 20px 0px;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: var(--Very-light-gray);
+}
+
+.btn{
+    font-size: 18px;
+    background:var(--Very-light-gray) ;
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+    width: 150px;
+}
+.btn:hover{
+    cursor: pointer;
+    background: none;
+    color: var(--Very-light-gray);
+    border: 1px var(--Very-light-gray) solid;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+
+@media only screen and (max-width:900px)
+{
+    .wrapper{
+        display: block;
+    }    
+    .card{
+    padding: 50px 50px;
+    width: 300px;
+    height: 450px;
+    }
+        
+.btn
+    {
+        font-size: 18px;
+        background:var(--Very-light-gray) ;
+        border: none;
+        border-radius: 50px;
+        height: 50px;
+        width: 150px;
+    }
+
+    
+    p{
+        margin: 30px 0px;
+        color: var(--Transparent-white);
+    }
+}
